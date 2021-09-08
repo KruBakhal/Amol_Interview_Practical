@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <RelativeLayout
+        android:id="@+id/lay_Retry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img11"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:layout_above="@id/sda"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/design_default_color_primary"
+            android:scaleType="centerCrop"
+            android:src="@drawable/outline_wifi_off_white_36" />
+
+
+        <TextView
+            android:id="@+id/sda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:gravity="center"
+            android:maxLines="3"
+            android:minLines="3"
+            android:text="REtry"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/img12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sda"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/bg_shape_tube"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:text="Retry"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

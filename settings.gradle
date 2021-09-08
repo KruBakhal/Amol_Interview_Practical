@@ -1,0 +1,2 @@
+rootProject.name = "Amol_Interview_Practical"
+include ':app'
