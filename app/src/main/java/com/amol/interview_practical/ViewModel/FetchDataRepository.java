@@ -57,7 +57,6 @@ public final class FetchDataRepository extends ViewModel implements Network_Retr
         return currentFecthData;
     }
 
-
     private void checkForDatabase_to_Load() {
         if (mDb == null)
             mDb = AppDatabase.getInstance(mainActivity);
@@ -117,7 +116,6 @@ public final class FetchDataRepository extends ViewModel implements Network_Retr
 //            showProgressBar.setValue(ProgressUIType.CANCEL);
         }
     }
-
 
     public MutableLiveData<List<Datum>> getUserData() {
         return listUserData;
@@ -272,5 +270,11 @@ public final class FetchDataRepository extends ViewModel implements Network_Retr
     @Override
     public void onCanceledPaginations(String message) {
         loading = false;
+    }
+
+    @Override
+    protected void onCleared() {
+        super.onCleared();
+
     }
 }

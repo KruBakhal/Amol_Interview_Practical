@@ -22,7 +22,6 @@ public class APIFetchService {
         if (fetchRepository == null) {
             fetchRepository = new APIFetchService();
             networkInterface = param;
-
             cout++;
             Log.d("TAG", "getMainResponse: $cout");
         }
